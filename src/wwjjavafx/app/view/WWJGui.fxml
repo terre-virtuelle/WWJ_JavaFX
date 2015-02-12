@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane id="StackPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wwjjavafx.app.controller.WWJController">
+    <children>
+        <BorderPane prefHeight="200.0" prefWidth="20.0">
+            <bottom>
+                <BorderPane id="bo" fx:id="statusBorderPane" prefHeight="24.0" prefWidth="600.0" />
+            </bottom>
+            <center>
+                <SplitPane dividerPositions="0.0" focusTraversable="true" prefHeight="362.0" prefWidth="0.0">
+                    <items>
+                        <BorderPane fx:id="leftBorderPane" prefHeight="200.0" prefWidth="0.0" />
+                        <StackPane fx:id="centerStackPane" prefHeight="200.0" prefWidth="600.0" />
+                    </items>
+                </SplitPane>
+            </center>
+            <top>
+                <MenuBar fx:id="menuBar" useSystemMenuBar="true">
+                    <menus>
+                        <Menu mnemonicParsing="false" text="File">
+                            <items>
+                                <MenuItem fx:id="widget" mnemonicParsing="false" onAction="#loadWidget" text="Widget" />
+                                <MenuItem fx:id="exit" mnemonicParsing="false" onAction="#exit" text="Exit" />
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Help">
+                            <items>
+                                <MenuItem fx:id="false" mnemonicParsing="false" onAction="#about" text="About" />
+                            </items>
+                        </Menu>
+                    </menus>
+                </MenuBar>
+            </top>
+        </BorderPane>
+    </children>
+
+
+</StackPane>
